@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{minted}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\usepackage{float}
+\usepackage{bookmark}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\hypersetup{pdfborder=0 0 0}
+\usepackage[T1]{fontenc}
+\usepackage[pipeTables=true]{markdown}
+
+\title{HW}
+\author{Author}
+\date{\parbox{\linewidth}{\centering%
+  Date: \today \\
+  Course id: course id\\
+  Course name: Course name\\
+  SID: sid \\
+  Name: Author}}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\addcontentsline{toc}{section}{}
+\pagebreak
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{img.png}
+    \caption{image}
+    \label{fig:enter-label}
+\end{figure}
+
+\inputminted[linenos, breaklines]{console}{output.txt}
+
+\end{document}
